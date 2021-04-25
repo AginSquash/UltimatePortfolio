@@ -11,6 +11,10 @@
 		CDD0EAF42632D0DC00FC099B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0EAF32632D0DC00FC099B /* ContentView.swift */; };
 		CDD0EAF62632D0DC00FC099B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD0EAF52632D0DC00FC099B /* Assets.xcassets */; };
 		CDD0EAF92632D0DC00FC099B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDD0EAF82632D0DC00FC099B /* Preview Assets.xcassets */; };
+		CDD0EB032632D1F000FC099B /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDD0EB012632D1F000FC099B /* Main.xcdatamodeld */; };
+		CDD0EB062632D6B500FC099B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0EB052632D6B500FC099B /* DataController.swift */; };
+		CDD0EB0A26343BBC00FC099B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0EB0926343BBC00FC099B /* HomeView.swift */; };
+		CDD0EB0E2635875400FC099B /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD0EB0D2635875400FC099B /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		CDD0EAF52632D0DC00FC099B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDD0EAF82632D0DC00FC099B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CDD0EAFA2632D0DC00FC099B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD0EB022632D1F000FC099B /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		CDD0EB052632D6B500FC099B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		CDD0EB0926343BBC00FC099B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CDD0EB0D2635875400FC099B /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,12 @@
 		CDD0EAF02632D0DC00FC099B /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				CDD0EB0926343BBC00FC099B /* HomeView.swift */,
+				CDD0EB0D2635875400FC099B /* ProjectsView.swift */,
 				CDD0EAF12632D0DC00FC099B /* UltimatePortfolioApp.swift */,
 				CDD0EAF32632D0DC00FC099B /* ContentView.swift */,
+				CDD0EB012632D1F000FC099B /* Main.xcdatamodeld */,
+				CDD0EB052632D6B500FC099B /* DataController.swift */,
 				CDD0EAF52632D0DC00FC099B /* Assets.xcassets */,
 				CDD0EAFA2632D0DC00FC099B /* Info.plist */,
 				CDD0EAF72632D0DC00FC099B /* Preview Content */,
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD0EB0E2635875400FC099B /* ProjectsView.swift in Sources */,
+				CDD0EB032632D1F000FC099B /* Main.xcdatamodeld in Sources */,
+				CDD0EB062632D6B500FC099B /* DataController.swift in Sources */,
 				CDD0EAF42632D0DC00FC099B /* ContentView.swift in Sources */,
+				CDD0EB0A26343BBC00FC099B /* HomeView.swift in Sources */,
 				CDD0EAF22632D0DC00FC099B /* UltimatePortfolioApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +344,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDD0EB012632D1F000FC099B /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDD0EB022632D1F000FC099B /* Main.xcdatamodel */,
+			);
+			currentVersion = CDD0EB022632D1F000FC099B /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CDD0EAE62632D0DC00FC099B /* Project object */;
 }
