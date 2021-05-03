@@ -19,11 +19,11 @@ struct EditItemView: View {
     var body: some View {
         Form {
             Section(header: Text("Basic setting")) {
-                TextField("Item name", text: $title)
-                TextField("Description", text: $detail)
+                TextField("Item name", text: $title.onChange(update))
+                TextField("Description", text: $detail.onChange(update))
             }
             Section(header: Text("Priority")) {
-                Picker("Priority", selection: $priority) {
+                Picker("Priority", selection: $priority.onChange(update)) {
                     Text("Low").tag(1)
                     Text("Medium").tag(2)
                     Text("High").tag(3)
@@ -31,11 +31,18 @@ struct EditItemView: View {
                 .pickerStyle(SegmentedPickerStyle())
             }
             Section {
-                Toggle("Mark Completed", isOn: $completed)
+                Toggle("Mark Completed", isOn: $completed.onChange(update))
             }
         }
         .navigationTitle("Edit Item")
-        .onDisappear(perform: update)
+        .onDisappear(perform: dataController.save)
+        /// Legacy. Now we will use .onChange(_ handler)
+        /*
+        .onChange(of: title, perform: { _ in update() })
+        .onChange(of: detail, perform: { _ in update() })
+        .onChange(of: priority, perform: { _ in update() })
+        .onChange(of: completed, perform: { _ in update() })
+         */
     }
     
     func update() {
