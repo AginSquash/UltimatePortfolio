@@ -25,6 +25,6 @@ struct UltimatePortfolioApp: App {
     
     init() {
         let dataController = DataController()
-        _dataController = StateObject(wrappedValue: dataController) // try to use self instead
+        _dataController = StateObject(wrappedValue: dataController) // _ <- creating NEW object
     }
 }
