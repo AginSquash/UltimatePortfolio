@@ -22,9 +22,13 @@ extension Project {
         color ?? "Light Blue"
     }
     
+    
     var projectItems: [Item] {
-        let itemsArray = items?.allObjects as? [Item] ?? []
-        return itemsArray.sorted { first, second in
+        items?.allObjects as? [Item] ?? []
+    }
+    
+    var projectItemsDefaultSorted: [Item] {
+        return projectItems.sorted { first, second in
             
             /* legacy code
              if first.completed == false {
