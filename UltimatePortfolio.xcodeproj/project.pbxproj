@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD04AC712647565500DB8379 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD04AC702647565500DB8379 /* SelectSomethingView.swift */; };
 		CD17D9C12639D3FF005C1D0A /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD17D9C02639D3FF005C1D0A /* EditItemView.swift */; };
 		CD17D9C42639DECC005C1D0A /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD17D9C32639DECC005C1D0A /* ItemRowView.swift */; };
 		CD444508264038E9005E4724 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD444507264038E9005E4724 /* Binding-OnChange.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD04AC702647565500DB8379 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		CD17D9C02639D3FF005C1D0A /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		CD17D9C32639DECC005C1D0A /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		CD444507264038E9005E4724 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				CDD0EB0926343BBC00FC099B /* HomeView.swift */,
 				CDD0EB0D2635875400FC099B /* ProjectsView.swift */,
+				CD04AC702647565500DB8379 /* SelectSomethingView.swift */,
 				CDD0EAF12632D0DC00FC099B /* UltimatePortfolioApp.swift */,
 				CDD0EAF32632D0DC00FC099B /* ContentView.swift */,
 				CD17D9C02639D3FF005C1D0A /* EditItemView.swift */,
@@ -178,6 +181,7 @@
 				CDD0EB0E2635875400FC099B /* ProjectsView.swift in Sources */,
 				CD44450A26418F77005E4724 /* ProjectHeaderView.swift in Sources */,
 				CDD0EB032632D1F000FC099B /* Main.xcdatamodeld in Sources */,
+				CD04AC712647565500DB8379 /* SelectSomethingView.swift in Sources */,
 				CDD0EB142635BA7D00FC099B /* Project-CoreDataHelpers.swift in Sources */,
 				CD44450E2642BEC5005E4724 /* EditProjectView.swift in Sources */,
 				CDD0EB062632D6B500FC099B /* DataController.swift in Sources */,
