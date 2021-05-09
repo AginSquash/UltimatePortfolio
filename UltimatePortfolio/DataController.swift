@@ -25,6 +25,26 @@ class DataController: ObservableObject {
         }
     }
     
+    func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
+        (try? container.viewContext.count(for: fetchRequest)) ?? 0
+    }
+    
+    func hasEarned(award: Award) -> Bool {
+        switch award.criterion {
+        case "items":
+            let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
+            let completedCount = count(for: fetchRequest)
+            return completedCount >= award.value
+        case "complete":
+            let fetchRequest: NSFetchRequest<Item> = NSFetchRequest(entityName: "Item")
+            fetchRequest.predicate = NSPredicate(format: "completed = true")
+            let completedCount = count(for: fetchRequest)
+            return completedCount >= award.value
+        default:
+            return false
+        }
+    }
+    
     func save() {
         if container.viewContext.hasChanges {
             try? container.viewContext.save()
