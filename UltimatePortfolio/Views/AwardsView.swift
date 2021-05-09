@@ -56,7 +56,6 @@ struct AwardsView_Previews: PreviewProvider {
     static var dataController = DataController.preview
     static var previews: some View {
         AwardsView()
-            .environment(\.managedObjectContext, dataController.container.viewContext)
             .environmentObject(dataController)
     }
 }
