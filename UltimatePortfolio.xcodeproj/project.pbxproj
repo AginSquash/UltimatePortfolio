@@ -16,6 +16,8 @@
 		CD44450A26418F77005E4724 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44450926418F77005E4724 /* ProjectHeaderView.swift */; };
 		CD44450C26419349005E4724 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD44450B26419349005E4724 /* Colors.xcassets */; };
 		CD44450E2642BEC5005E4724 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44450D2642BEC5005E4724 /* EditProjectView.swift */; };
+		CD88DD3D26A3689B00672026 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD88DD3F26A3689B00672026 /* Localizable.strings */; };
+		CD88DD4126A36D6F00672026 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = CD88DD4326A36D6F00672026 /* Localizable.stringsdict */; };
 		CD91B29E2648A87A009F5BAD /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD91B29D2648A87A009F5BAD /* Color-Additions.swift */; };
 		CD9C38E12648079B0017DC9B /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C38E02648079B0017DC9B /* Award.swift */; };
 		CD9C38E3264808F40017DC9B /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C38E2264808F40017DC9B /* AwardsView.swift */; };
@@ -41,6 +43,10 @@
 		CD44450926418F77005E4724 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		CD44450B26419349005E4724 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CD44450D2642BEC5005E4724 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		CD88DD3E26A3689B00672026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD88DD4026A368AB00672026 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CD88DD4226A36D6F00672026 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		CD88DD4426A36D7300672026 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		CD91B29D2648A87A009F5BAD /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		CD9C38E02648079B0017DC9B /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		CD9C38E2264808F40017DC9B /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
@@ -78,8 +84,8 @@
 				CD17D9C32639DECC005C1D0A /* ItemRowView.swift */,
 				CD44450926418F77005E4724 /* ProjectHeaderView.swift */,
 				CD04AC702647565500DB8379 /* SelectSomethingView.swift */,
-				CD17D9C02639D3FF005C1D0A /* EditItemView.swift */,
 				CD44450D2642BEC5005E4724 /* EditProjectView.swift */,
+				CD17D9C02639D3FF005C1D0A /* EditItemView.swift */,
 				CD9C38E2264808F40017DC9B /* AwardsView.swift */,
 			);
 			path = Views;
@@ -104,6 +110,8 @@
 		CDD0EAF02632D0DC00FC099B /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				CD88DD3F26A3689B00672026 /* Localizable.strings */,
+				CD88DD4326A36D6F00672026 /* Localizable.stringsdict */,
 				CD9C38E426480B820017DC9B /* Views */,
 				CD9C38E02648079B0017DC9B /* Award.swift */,
 				CD04AC7226475A0F00DB8379 /* Bundle-Decodable.swift */,
@@ -172,6 +180,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = CDD0EAE52632D0DC00FC099B;
 			productRefGroup = CDD0EAEF2632D0DC00FC099B /* Products */;
@@ -188,10 +197,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD88DD3D26A3689B00672026 /* Localizable.strings in Resources */,
 				CD44450C26419349005E4724 /* Colors.xcassets in Resources */,
 				CD04AC7526475C8A00DB8379 /* Awards.json in Resources */,
 				CDD0EAF92632D0DC00FC099B /* Preview Assets.xcassets in Resources */,
 				CDD0EAF62632D0DC00FC099B /* Assets.xcassets in Resources */,
+				CD88DD4126A36D6F00672026 /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +235,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD88DD3F26A3689B00672026 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD88DD3E26A3689B00672026 /* en */,
+				CD88DD4026A368AB00672026 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CD88DD4326A36D6F00672026 /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD88DD4226A36D6F00672026 /* en */,
+				CD88DD4426A36D7300672026 /* ru */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CDD0EAFB2632D0DC00FC099B /* Debug */ = {
